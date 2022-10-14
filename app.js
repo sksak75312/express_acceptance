@@ -13,10 +13,10 @@ app.get('/', (req, res) => {
 
 app.get('/:pages', (req, res) => {
   const page = req.params.pages.charAt(0).toUpperCase() + req.params.pages.slice(1)
-  res.render('pages', {pages : page})
+  res.render('pages', { pages: page })
 })
 
 app.listen(port, () => {
-  console.log(`Express running localhost:${port}`)
+  console.log(`Express is running on localhost:${port}`)
 })
 
